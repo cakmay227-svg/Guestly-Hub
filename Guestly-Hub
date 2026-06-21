@@ -1,0 +1,1247 @@
+local Fluent, SaveManager, InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/Beta.lua"))()
+
+local Window = Fluent:CreateWindow({
+    Title = "Guestly Hub [DOORS MODE HUB] V1",
+    SubTitle = "Made by Guestly",
+    Search = true, -- optional and default true
+    Icon = "rbxassetid://117784816158744", -- optional
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Aqua",
+    MinimizeKey = Enum.KeyCode.LeftControl, -- Used when theres no MinimizeKeybind
+
+    UserInfo = true,
+    UserInfoTop = true, -- display user info at the top of the window
+    UserInfoTitle = game:GetService("Players").LocalPlayer.DisplayName,
+    UserInfoSubtitle = "That guy using my hub",
+    UserInfoSubtitleColor = Color3.fromRGB(255,255,255)
+})
+
+local Minimizer = Fluent:CreateMinimizer({
+  Icon = "rbxassetid://117784816158744",
+  Size = UDim2.fromOffset(44, 44),
+  Position = UDim2.new(0, 320, 0, 24),
+  Acrylic = true,
+  Corner = 30,
+  Transparency = 1,
+  Draggable = true,
+  IconCorner = 50,
+  IconTransparency = 0.1,
+  IconDraggable = false,
+  Size = UDim2.fromOffset(65,65)
+})
+
+Minimizer.Visible = true
+
+local Tabs = {
+    Modes = Window:AddTab({ Title = "Modes", Icon = "rbxassetid://94583995140844" }),
+    Stuffs = Window:AddTab({ Title = "Stuffs", Icon = "rbxassetid://115415255329114" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "rbxassetid://107234718389029" })
+}
+
+Tabs.Modes:AddParagraph({
+        Icon = "rbxassetid://119332024369695",
+        Title = "Modes Notifier",
+        Content = "There are modes that are currently working perfectly"
+    })
+    
+    Fluent:Notify({
+        Title = "Guestly Hub",
+        Content = "Welcome to Guestly Hub",
+        SubContent = "Script has successfully loaded!", -- Optional
+        Duration = 5 -- Set to nil to make the notification not disappear
+    })
+
+local Options = Fluent.Options
+local Section = Tabs.Modes:AddSection("This is where you can pick modes âœ¨", "Bla")
+
+Tabs.Modes:AddButton({
+        Title = "Cataclysm Mode",
+        Description = "Cataclysm Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Cataclysm Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Cataclysm-Mode-made-by-Guestly-and-Vuivuiviu3", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Cataclysmic Mode",
+        Description = "Cataclysmic Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Cataclysmic Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Cataclysmic-Mode-Made-by-Guestly-and-Vuivuiviu4", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Lunacy Mode (Rebirthed) ",
+        Description = "Lunacy Mode (Rebirthed) will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Lunacy Mode (Rebirthed) ",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Nowhywhat/Cooking/main/LunacyMode.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Lunacy Mode (Legacy) ",
+        Description = "Lunacy Mode (Legacy) will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Lunacy Mode (Legacy) ",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+                   
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Lunacy-Mode-Made-By-Guestly-Vuivuiviu2-Nowhywhat-And-Voorpr0", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Water Rises Mode",
+        Description = "Water Rises Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Water Rises Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+
+loadstring(game:HttpGet("https://pastefy.app/mrM9vA2L/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Impossible Mode",
+        Description = "Impossible Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Impossible Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://pastefy.app/rcWn8qtU/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Fear Mode",
+        Description = "Fear Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Fear Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://pastefy.app/jFdxd7Zu/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Hardcore Mode Re-remastered",
+        Description = "Hardcore Mode Re-remastered will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Hardcore Mode Re-remastered",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Hardcore-Mode-Re-Remastered-Made-By-Guestly-Vuivuiviu2-Nowhywhat-Voorpr0", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Voidness Mode",
+        Description = "Voidness Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Voidness Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Voidness-Mode-Made-By-Guestly-Vuivuiviu2-And-Voorpr0", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Fragmented Mode",
+        Description = "Fragmented Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Fragmented Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/talales/Nhankg-/refs/heads/main/the%20fragments%20v5"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Mayhem Mode",
+        Description = "Mayhem Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Mayhem Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/localplayerr/Doors-stuff/refs/heads/main/Mayhem%20mode%20recreate/Code"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Furry Mode",
+        Description = "Furry Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Furry Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+
+loadstring(game:HttpGet("https://pastefy.app/US91TWoT/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Hallucination Mode (Easy) ",
+        Description = "Hallucination Mode (Easy) will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Hallucination Mode (Easy)",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Hallucination-Mode-(Easy-Version)-Made-by-Celestian-on-Discord", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Hallucination Mode (Hard) ",
+        Description = "Hallucination Mode (Hard) will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Hallucination Mode (Hard)",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Hallucination-Mode-(Hard-Version)-Made-by-Celestian-On-Discord", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Hallucination Mode (Impossible) ",
+        Description = "Hallucination Mode (Impossible) will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Hallucination Mode (Impossible)",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+task.spawn(function()
+    local ok, err = pcall(function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Hallucination-Mode-(Easy-Version)-Made-by-Celestian-on-Discord",
+            true
+        ))()
+    end)
+
+    if not ok then
+        warn("Easy Mode failed:", err)
+    end
+end)
+
+task.spawn(function()
+    local ok, err = pcall(function()
+        loadstring(game:HttpGet(
+            "https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Hallucination-Mode-(Hard-Version)-Made-by-Celestian-On-Discord",
+            true
+        ))()
+    end)
+
+    if not ok then
+        warn("Hard Mode failed:", err)
+    end
+end)
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Hazy Mode",
+        Description = "Hazy Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Hazy Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Hazy-Mode-Recreated-made-by-Guestly-(Celestian)-on-Discord", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Extreme Mode",
+        Description = "Extreme Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Extreme Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Extreme-Mode-Recreated-made-by-Guestly", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Forbidden Mode",
+        Description = "Forbidden Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Forbidden Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Forbidden-Mode-recreated-by-Guestly", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Insane Mode",
+        Description = "Insane Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Insane Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Insane-Mode"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Suggestions Mode",
+        Description = "Suggestions Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Suggestions Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Suggestions-Mode", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Parts Mode",
+        Description = "Parts Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Parts Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Parts-Mode"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Glassy Mode",
+        Description = "Glassy Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Glassy Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lynguyen26031993-design/-u/refs/heads/main/Glassy%20Mode"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Laver Mode",
+        Description = "Laver Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Laver Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Laver-Mode-Remake"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Crazy Mode",
+        Description = "Crazy Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Crazy Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lynguyen26031993-design/-u/refs/heads/main/crazy-mode"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Strange Mode",
+        Description = "Strange Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Strange Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Strange-Mode"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Dreamcore Mode",
+        Description = "Dreamcore Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Dreamcore Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Modes/refs/heads/main/Dreamcore-Mode-Made-by-Guestly-and-Voorpr0", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Impossible Mode Re-degenerate",
+        Description = "Impossible Mode Re-degenerate will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Impossible Mode Re-degenerate",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Impossible-Mode-Re-Degenerate-Made-By-Guestly", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Degenerate Mode",
+        Description = "Degenerate Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Degenerate Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Degenerate-Mode-Reposted"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Ambush Mode",
+        Description = "Ambush Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Ambush Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://pastefy.app/kuLssvSU/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "A-60 Mode",
+        Description = "A-60 Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "A-60 Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://pastefy.app/NaXnxsqw/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Fog Mode",
+        Description = "Fog Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Fog Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ganyu06112/Fog-Mode/refs/heads/main/Fog-Mode.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Arctic Mode",
+        Description = "Arctic Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Arctic Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Modes/refs/heads/main/Arctic-Mode-(Beta)-By-Guestly-And-Vuivuiviu2"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Modes:AddButton({
+        Title = "Nightmare Mode",
+        Description = "Nightmare Mode will be executed when you click this button. ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Nightmare Mode",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://pastebin.com/raw/YbkbZ3fp"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Game file Logger",
+        Description = "We going to steal files within this",
+        Callback = function()
+            Window:Dialog({
+                Title = "Game file Logger",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Scripts/refs/heads/main/Game-Files-Logger"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Crucifix",
+        Description = "This will give you a crucifix",
+        Callback = function()
+            Window:Dialog({
+                Title = "Crucifix",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Admin Slap",
+        Description = "This will give you an powerful item called 'Admin Slap' ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Admin Slap",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GuestlyTheGreatestGuest/Scripts/refs/heads/main/Admin-Slap-For-DOORS-made-by-Celestian-(Guestly)-on-Discord", true))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Floor 2 theme",
+        Description = "This will make the hotel becomes the mines",
+        Callback = function()
+            Window:Dialog({
+                Title = "Floor 2 theme",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Junxd-03/Floor-2/refs/heads/main/New"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Helpful Rush",
+        Description = "This will spawn Rush that helps you",
+        Callback = function()
+            Window:Dialog({
+                Title = "Helpful Rush",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LukeLor/LukeLor/refs/heads/main/Helpful%20Rush.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Magic Book",
+        Description = "This will give you an item called 'Magic Book' ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Magic Book",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/skkenrgjt/HAHAHAH/refs/heads/main/MagicRunner"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Seek Gun",
+        Description = "This will give you an item called 'Seek Gun' ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Seek Gun",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Scanner (NVCS-3000)",
+        Description = "This will give you an powerful item called 'Scanner' ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Scanner",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/Scanner.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Barrel Of Starlight",
+        Description = "This will give you an item called 'Barrel Of Starlight' ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Barrel of Starlight",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Mischievous Crucifix",
+        Description = "This will give you a Mischievous crucifix",
+        Callback = function()
+            Window:Dialog({
+                Title = "Mischievous crucifix",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Modhub-assets/refs/heads/main/MischievousV2Test.lua"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+    
+    Tabs.Stuffs:AddButton({
+        Title = "Resizer Stick",
+        Description = "This will give you an item called 'Resizer Stick' ",
+        Callback = function()
+            Window:Dialog({
+                Title = "Resizer Stick",
+                Content = "Do you really want to execute this mode script? ",
+                Buttons = {
+                    {
+                        Title = "Execute",
+                        Callback = function()
+                            print("Confirmed the dialog.")
+loadstring(game:HttpGet("https://pastefy.app/dy85jtB6/raw"))()
+                        end
+                    },
+                    {
+                        Title = "Cancel",
+                        Callback = function()
+                            print("Cancelled the dialog.")
+                        end
+                    }
+                }
+            })
+        end
+    })
+
+SaveManager:SetLibrary(Fluent)
+InterfaceManager:SetLibrary(Fluent)
+
+-- Ignore keys that are used by ThemeManager.
+-- (we dont want configs to save themes, do we?)
+SaveManager:IgnoreThemeSettings()
+
+-- You can add indexes of elements the save manager should ignore
+SaveManager:SetIgnoreIndexes({})
+
+-- use case for doing it this way:
+-- a script hub could have themes in a global folder
+-- and game configs in a separate folder per game
+InterfaceManager:SetFolder("FluentScriptHub")
+SaveManager:SetFolder("FluentScriptHub/specific-game")
+
+InterfaceManager:BuildInterfaceSection(Tabs.Settings)
+SaveManager:BuildConfigSection(Tabs.Settings)
