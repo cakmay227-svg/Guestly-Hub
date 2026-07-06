@@ -1,7 +1,7 @@
 local Fluent, SaveManager, InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/Beta.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Guestly Hub [DOORS MODE HUB] V2",
+    Title = "Guestly Hub [DOORS MODE HUB] V1",
     SubTitle = "Made by Guestly",
     Search = true, -- optional and default true
     Icon = "rbxassetid://117784816158744", -- optional
@@ -61,8 +61,8 @@ Tabs.Modes:AddParagraph({
     })
 
 local Options = Fluent.Options
-local Section = Tabs.Modes:AddSection("This is where you can pick modes ✨", "Bla")
-local Section2 = Tabs.PrivateModes:AddSection("Use them if you have access to them 🔥", "Bla")
+local Section = Tabs.Modes:AddSection("This is where you can pick modes âœ¨", "Bla")
+local Section2 = Tabs.PrivateModes:AddSection("Use them if you have access to them ðŸ”¥", "Bla")
 
 Tabs.Modes:AddButton({
         Title = "Cataclysm Mode",
@@ -961,7 +961,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/YbkbZ3fp"))()
                         Title = "Execute",
                         Callback = function()
                             print("Confirmed the dialog.")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/Bissastant-Mode"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/refs/heads/main/antileakbissastant"))()
                         end
                     },
                     {
@@ -1429,7 +1429,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Not-Guestly/Scripts/r
                         Title = "Execute",
                         Callback = function()
                             print("Confirmed the dialog.")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/Viridis-Rift"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/refs/heads/main/v%E1%BB%89idislightrift"))()
                         end
                     },
                     {
@@ -1455,7 +1455,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/r
                         Title = "Execute",
                         Callback = function()
                             print("Confirmed the dialog.")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/Mischievous-Rift"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/refs/heads/main/friendlymicjievouslight"))()
                         end
                     },
                     {
@@ -1481,7 +1481,7 @@ Tabs.Stuffs:AddButton({
                         Title = "Execute",
                         Callback = function()
                             print("Confirmed the dialog.")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/Glitch-Rift"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/refs/heads/main/glitchrift"))()
                         end
                     },
                     {
@@ -1507,7 +1507,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/r
                         Title = "Execute",
                         Callback = function()
                             print("Confirmed the dialog.")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/MoonJug"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/refs/heads/main/Moon%20jug"))()
                         end
                     },
                     {
@@ -1533,7 +1533,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/r
                         Title = "Execute",
                         Callback = function()
                             print("Confirmed the dialog.")
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Guestly-Alt/Scripts/refs/heads/main/Spiral-Jug"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/refs/heads/main/spiral%20jug"))()
                         end
                     },
                     {
@@ -1734,7 +1734,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/cakmay227-svg/random/
         Description = "This will give you an item called 'Viridis Vial' ",
         Callback = function()
             Window:Dialog({
-                Title = "Glitch Bottle",
+                Title = "Viridis Vial",
                 Content = "Do you really want to execute this mode script? ",
                 Buttons = {
                     {
