@@ -1,7 +1,7 @@
 local Fluent, SaveManager, InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/discoart/FluentPlus/refs/heads/main/Beta.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Guestly Hub [DOORS MODE HUB] V1",
+    Title = "Guestly Hub [DOORS MODE HUB] V2",
     SubTitle = "Made by Guestly",
     Search = true, -- optional and default true
     Icon = "rbxassetid://117784816158744", -- optional
